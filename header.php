@@ -40,7 +40,7 @@ $nav_items = array(
             <?php foreach ($nav_items as $item) : ?>
               <a href="<?php echo esc_url($item['href']); ?>" class="cursor-pointer transition-colors relative group text-base <?php echo $item['active'] ? 'text-indigo-600 dark:text-indigo-400' : 'text-accent-foreground hover:text-indigo-600 dark:hover:text-indigo-400'; ?>">
                 <?php echo esc_html($item['label']); ?>
-                <span class="abolute -bottom-1 left-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all <?php echo $item['active'] ? 'w-full' : 'w-0 group-hover:w-full'; ?>"></span>
+                <span class="absolute -bottom-1 left-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all <?php echo $item['active'] ? 'w-full' : 'w-0 group-hover:w-full'; ?>"></span>
               </a>
             <?php endforeach; ?>
 

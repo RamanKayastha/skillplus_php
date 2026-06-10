@@ -2,8 +2,8 @@
 get_header();
 ?>
 
-<!-- WHITE SECTION: Body Content -->
-<main class="grow pt-20">
+<!-- Body Content -->
+<main class="grow">
     <?php
 
     if (have_rows('flexible_section')):
