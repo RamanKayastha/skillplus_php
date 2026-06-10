@@ -7,26 +7,26 @@
                   class="flex items-center justify-center flex-col text-center gap-5">
                   <div
                       class="py-1 text-indigo-600 font-semibold border-b-2 border-indigo-600 mb-1.5">
-                      <?php the_sub_field('about_label'); ?>
+                  
                   </div>
                   <h2 class="text-3xl md:text-5xl font-bold text-foreground">
-                      <?php the_sub_field('about_title'); ?>
+                      <?php the_sub_field('about_title'); ?>                        
                   </h2>
-                  <p
+                  <div
                       class="text-lg md:text-xl text-muted-foreground mx-auto max-w-3xl">
                       <?php the_sub_field('about_description'); ?>
-                  </p>
+                  </div>
               </div>
               <div class="max-w-4xl mx-auto mt-16 text-center">
                   <h3 class="text-2xl font-bold mb-4"><?php the_sub_field('company_name'); ?></h3>
-                  <p class="text-muted-foreground mb-6">
+                  <div class="text-muted-foreground mb-6">
                       <?php the_sub_field('company_description'); ?>
-                  </p>
+                  </div>
                   <?php if (have_rows('company_tags')): ?>
                       <div class="flex flex-wrap justify-center gap-3">
 
                           <?php while (have_rows('company_tags')): the_row(); ?>
-                              <span class="px-4 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
+                              <span class="px-4 py-1.5 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300 text-sm font-medium flex items-center gap-2"">
                                   <?php the_sub_field('tag_text'); ?>
                               </span>
                           <?php endwhile; ?>
