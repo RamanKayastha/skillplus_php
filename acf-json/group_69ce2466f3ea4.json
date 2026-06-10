@@ -148,10 +148,10 @@
                         },
                         {
                             "key": "field_69ce43b97ea03",
-                            "label": "Client Repeater",
-                            "name": "client_repeater",
+                            "label": "hero_banner_image",
+                            "name": "hero_banner_image",
                             "aria-label": "",
-                            "type": "repeater",
+                            "type": "image",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -160,63 +160,17 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
-                            "min": 0,
-                            "max": 0,
-                            "collapsed": "",
-                            "button_label": "Add Row",
-                            "rows_per_page": 20,
-                            "sub_fields": [
-                                {
-                                    "key": "field_69ce43d17ea04",
-                                    "label": "Logo Name",
-                                    "name": "logo_name",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "allow_in_bindings": 0,
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_69ce43b97ea03"
-                                },
-                                {
-                                    "key": "field_69ce43f17ea05",
-                                    "label": "Logo Icon",
-                                    "name": "logo_icon",
-                                    "aria-label": "",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "url",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": "",
-                                    "allow_in_bindings": 0,
-                                    "preview_size": "medium",
-                                    "parent_repeater": "field_69ce43b97ea03"
-                                }
-                            ]
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
                         }
                     ],
                     "min": "",
@@ -1639,5 +1593,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1781081097
+    "modified": 1781085066
 }

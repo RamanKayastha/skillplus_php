@@ -41,7 +41,7 @@
                       <div class="overflow-hidden py-2">
                           <h1
                               class="bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent inline-block">
-                              <?php the_sub_field('hero_highlight'); ?>
+                              <?php the_sub_field('highlight_title'); ?>
                           </h1>
                       </div>
                   </h1>
@@ -68,37 +68,15 @@
                                   d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
                           </svg><?php the_sub_field('button_text'); ?></a>
                   </div>
-                  <div class="mt-20 pt-10 max-w-6xl mx-auto">
+                  <div class=" pt-10 max-w-6xl mx-auto">
                       <p
                           class="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-8">
                           <?php the_sub_field('trusted_text'); ?>
                       </p>
 
-                      <div
-                          class="relative flex w-full flex-col items-center justify-center overflow-hidden">
-                          <div
-                              class="group flex overflow-hidden p-2 [--gap:1rem] [gap:var(--gap)] flex-row [--duration:40s]">
-
-                              <div
-                                  class="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row group-hover:[animation-play-state:paused]">
-                                  <?php if (have_rows('client_repeater')): ?>
-                                      <?php while (have_rows('client_repeater')): the_row(); ?>
-                                          <div
-                                              class="flex items-center justify-center mx-8 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                                              <img src="<?php the_sub_field('logo_icon'); ?>" alt="">
-                                              <span
-                                                  class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-700 to-gray-500 dark:from-gray-300 dark:to-gray-500"><?php the_sub_field('logo_name'); ?></span>
-                                          </div>
-                                      <?php endwhile; ?>
-                                  <?php endif; ?>
-                              </div>
-
-                          </div>
-                          <div
-                              class="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background dark:from-background"></div>
-                          <div
-                              class="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background dark:from-background"></div>
-                      </div>
+                      <?php if (get_sub_field('hero_banner_image')): ?>
+                          <img class="w-full h-auto" src="<?php the_sub_field('hero_banner_image'); ?>" alt="">
+                      <?php endif; ?>
 
                   </div>
               </div>
