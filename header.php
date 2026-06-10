@@ -3,6 +3,7 @@
 $nav_items = array(
   array('label' => 'Home', 'href' => home_url('/'), 'active' => is_front_page() || is_home()),
   array('label' => 'About', 'href' => home_url('/about/'), 'active' => is_page('about')),
+  array('label' => 'Features', 'href' => home_url('/features/'), 'active' => is_page('features')),
   array('label' => 'Contact', 'href' => home_url('/contact/'), 'active' => is_page('contact')),
   array('label' => 'Features', 'href' => home_url('/services/'), 'active' => is_page('services')),
   array('label' => 'Industry', 'href' => home_url('/industry/'), 'active' => is_page('industry')),
