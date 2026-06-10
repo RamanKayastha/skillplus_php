@@ -2,7 +2,7 @@
       <section class="py-24 border-b border-border/50">
           <div class="container mx-auto px-6">
               <div
-                  class="flex items-center justify-center flex-col text-center gap-5 mb-20">
+                  class="flex items-center justify-center flex-col text-center gap-5 mb-15">
                   <h2 class="text-3xl md:text-5xl font-bold text-foreground">
                       <?php the_sub_field('why_title'); ?>
                   </h2>

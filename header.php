@@ -1,12 +1,8 @@
 <?php
-$feature_archive = get_post_type_archive_link('features') ?: home_url('/features/');
-$industry_archive = get_post_type_archive_link('industries') ?: home_url('/industries/');
 
 $nav_items = array(
   array('label' => 'Home', 'href' => home_url('/'), 'active' => is_front_page() || is_home()),
   array('label' => 'About', 'href' => home_url('/about/'), 'active' => is_page('about')),
-  array('label' => 'Features', 'href' => $feature_archive, 'active' => is_post_type_archive('features') || is_singular('features') || is_tax('feature_category')),
-  array('label' => 'Industry', 'href' => $industry_archive, 'active' => is_post_type_archive('industries') || is_singular('industries') || is_tax('industry_category')),
   array('label' => 'Contact', 'href' => home_url('/contact/'), 'active' => is_page('contact')),
 );
 ?>
@@ -41,7 +37,7 @@ $nav_items = array(
             <?php foreach ($nav_items as $item) : ?>
               <a href="<?php echo esc_url($item['href']); ?>" class="cursor-pointer transition-colors relative group text-base <?php echo $item['active'] ? 'text-indigo-600 dark:text-indigo-400' : 'text-accent-foreground hover:text-indigo-600 dark:hover:text-indigo-400'; ?>">
                 <?php echo esc_html($item['label']); ?>
-                <span class="absolute -bottom-1 left-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all <?php echo $item['active'] ? 'w-full' : 'w-0 group-hover:w-full'; ?>"></span>
+                <span class="abolute -bottom-1 left-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all <?php echo $item['active'] ? 'w-full' : 'w-0 group-hover:w-full'; ?>"></span>
               </a>
             <?php endforeach; ?>
 

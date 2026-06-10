@@ -645,8 +645,8 @@
                 },
                 "layout_69ce3ee2ff3af": {
                     "key": "layout_69ce3ee2ff3af",
-                    "name": "key_features",
-                    "label": "Key Features",
+                    "name": "features",
+                    "label": "Features",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1639,5 +1639,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1778235188
+    "modified": 1781081097
 }
