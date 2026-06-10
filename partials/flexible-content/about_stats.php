@@ -31,9 +31,9 @@
                             <i data-lucide="<?php echo esc_attr($s_icon); ?>" class="w-8 h-8"></i>
                         </div>
                         <?php endif; ?>
-                        <div class="text-4xl lg:text-5xl font-black text-white mb-2 tabular-nums">
-                            <?php echo esc_html($s_num); ?>
-                        </div>
+                        <div class="text-4xl lg:text-5xl font-black text-white mb-2 tabular-nums ">
+                           <span><?php echo esc_html($s_num); ?></span><span class="text-4xl font-bold">+</span>
+                        </div> 
                         <div class="text-indigo-100/80 font-medium tracking-wide uppercase text-xs lg:text-sm">
                             <?php echo esc_html($s_label); ?>
                         </div>
