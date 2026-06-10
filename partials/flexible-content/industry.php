@@ -22,7 +22,7 @@
                   <?php
                   $args = array(
                       'post_type'      => 'industries',
-                      'posts_per_page' => 3,
+                      'posts_per_page' => 6,
                       'orderby'        => 'date',
                       'order'          => 'DESC',
                   );

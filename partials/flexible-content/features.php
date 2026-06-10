@@ -7,24 +7,20 @@
                   class="flex items-center justify-center flex-col text-center gap-5 mb-16">
                   <div
                       class="py-1 text-indigo-600 font-semibold border-b-2 border-indigo-600 mb-1.5">
-                      <?php if (get_sub_field('features_tag')): ?>
-                          <?php echo get_sub_field('features_tag'); ?>
-                      <?php endif; ?>
+                        <?php the_sub_field('features_tag'); ?>
                   </div>
                   <h2 class="text-3xl md:text-5xl font-bold text-foreground">
-                      <?php if (get_sub_field('features_title')): ?>
-                          <?php echo get_sub_field('features_title'); ?>
-                      <?php endif; ?>
+                      <?php the_sub_field('features_title'); ?>
                   </h2>
                   <p
                       class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                      <?php echo get_sub_field('features_description'); ?>
+                      <?php the_sub_field('features_description'); ?>
                   </p>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                   <?php
                   $args = array(
-                      'post_type'      => 'features',
+                      'post_type'      => 'services',
                       'posts_per_page' => 4,
                       'orderby'        => 'date',
                       'order'          => 'DESC',
