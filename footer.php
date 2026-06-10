@@ -1,12 +1,10 @@
       <?php
-        $feature_archive = get_post_type_archive_link('features') ?: home_url('/features/');
-        $industry_archive = get_post_type_archive_link('industries') ?: home_url('/industries/');
-
         $footer_links = array(
-            array('label' => __('About', 'skillplus'), 'href' => home_url('/about/')),
-            array('label' => __('Features', 'skillplus'), 'href' => $feature_archive),
-            array('label' => __('Industry', 'skillplus'), 'href' => $industry_archive),
-            array('label' => __('Contact', 'skillplus'), 'href' => home_url('/contact/')),
+            array('label' => 'Home', 'href' => home_url('/'), 'active' => is_front_page() || is_home()),
+            array('label' => 'About', 'href' => home_url('/about/'), 'active' => is_page('about')),
+            array('label' => 'Contact', 'href' => home_url('/contact/'), 'active' => is_page('contact')),
+            array('label' => 'Features', 'href' => home_url('/features/'), 'active' => is_page('features')),
+            array('label' => 'Industry', 'href' => home_url('/industry/'), 'active' => is_page('industry')),
         );
       ?>
       <!-- Footer -->
